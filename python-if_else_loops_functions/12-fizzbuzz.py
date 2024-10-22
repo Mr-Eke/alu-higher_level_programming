@@ -9,6 +9,8 @@
 #             print('FizzBuzz', end='')
 #         else:
 #             print(i, end=' ')
+
+
 def fizzbuzz():
     for i in range(1, 101):
         fizzBuzz = "Fizz" * (not i % 3) + "Buzz" * (not i % 5)
