@@ -10,7 +10,7 @@ if __name__ == "__main__":
     if cmd_args == 1:
         print("{} arguments:".format(cmd_args))
         print("{}: {}".format(cmd_args, argv[1]))
-
-    print("{} arguments:".format(cmd_args))
-    for indx, i in enumerate(argv[1:], start=1):
-        print("{}: {}".format(indx, i))
+    else:
+        print("{} arguments:".format(cmd_args))
+        for indx, i in enumerate(argv[1:], start=1):
+            print("{}: {}".format(indx, i))
