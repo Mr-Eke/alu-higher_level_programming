@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     if cmd_args == 0:
         print("{} arguments.".format(cmd_args))
-    if cmd_args == 1:
+    elif cmd_args == 1:
         print("{} argument:".format(cmd_args))
         print("{}: {}".format(cmd_args, argv[1]))
     else:
