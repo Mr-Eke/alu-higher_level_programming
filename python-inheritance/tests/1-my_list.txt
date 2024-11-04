@@ -1,0 +1,11 @@
+>>> my_list = __import__('1-my_list').MyList
+
+>>> my_list_obj = my_list()
+
+>>> my_list_obj.append(5)
+>>> my_list_obj.append(900)
+>>> my_list_obj.append(59)
+>>> my_list_obj.append(500)
+>>> my_list_obj.append(51)
+
+[5, 900, 59, 500, 51]
