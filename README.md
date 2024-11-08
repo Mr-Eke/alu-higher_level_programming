@@ -1,2 +1,1 @@
-# alu-higher_level_programming
-Course works on Higher level programing (python, Javasript ...)
+Welcome to the Pythonic side of things, in this Project we will be talking about exceptions
