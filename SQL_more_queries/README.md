@@ -1,1 +1,1 @@
-readme file for SQL_ more queries
+0-privileges.sql
