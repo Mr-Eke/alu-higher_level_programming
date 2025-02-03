@@ -7,4 +7,3 @@ class Rectangle {
     }
   }
 }
-modules.export = Rectangle
