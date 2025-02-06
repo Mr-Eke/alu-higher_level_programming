@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #f5f5f5;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 20rem;
+    }
+
+    .card-grid__card {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 300px;
+    }
+
+    .card-grid__content {
+      flex: 1;
+    }
+
+    .card-grid__btn {
+      margin-top: auto;
+      padding: 0.75rem 1.5rem;
+      background: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .card-grid__btn:hover {
+      background: #0052a3;
+    }
+
+    h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.5;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-grid">
+    <!-- Card 1: Short content -->
+    <div class="card-grid__card">
+      <div class="card-grid__content">
+        <h2>Short Content</h2>
+        <p>This card has very little content.</p>
+      </div>
+      <button class="card-grid__btn">Learn More</button>
+    </div>
+
+    <!-- Card 2: Medium content -->
+    <div class="card-grid__card">
+      <div class="card-grid__content">
+        <h2>Medium Content</h2>
+        <p>This card has a medium amount of content. It shows how the button stays aligned with other cards regardless of content length.</p>
+      </div>
+      <button class="card-grid__btn">Learn More</button>
+    </div>
+
+    <!-- Card 3: Long content -->
+    <div class="card-grid__card">
+      <div class="card-grid__content">
+        <h2>Long Content</h2>
+        <p>This card has much more content than the others. Notice how all buttons still align at the bottom, regardless of content length. This is achieved using margin-top: auto on the button.</p>
+        <p>The gap property ensures consistent spacing between elements while margin-top: auto pushes the button to the bottom.</p>
+      </div>
+      <button class="card-grid__btn">Learn More</button>
+    </div>
+  </div>
+</body>
+</html>

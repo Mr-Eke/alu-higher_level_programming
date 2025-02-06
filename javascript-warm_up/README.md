@@ -1,2 +1,1 @@
-# Javascript Warmup
-
+This is a readme file for javascript

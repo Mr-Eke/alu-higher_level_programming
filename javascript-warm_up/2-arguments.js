@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-const { argv } = require('node:process');
-
-console.log(`${argv[2]} is ${argv[3]}`)
-
+#!/usr/bin/node
+const argv = process.argv.slice(2);
+const message = argv.length > 0 ? (argv.length === 1 ? 'Argument found' : 'Arguments found') : 'No argument';
+console.log(message);
