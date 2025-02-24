@@ -1,8 +1,18 @@
 #!/usr/bin/node
 const myObject = {
   type: 'object',
-  value: 12,
-	incr() {
-		myObject.value += 1
-	}
+  value: 12
 };
+console.log(myObject);
+/*
+YOUR CODE HERE
+*/
+myObject.incr = () => {
+  myObject.value += 1;
+};
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
